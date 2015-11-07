@@ -1,8 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.StringJoiner;
-
-
 public class Lotto649 extends LottoGame implements IBonusNumber {
 
 	private int _bonNum =0;

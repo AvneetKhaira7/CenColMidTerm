@@ -21,12 +21,13 @@ public abstract class LottoGame {
 	}
 	
 	public void pickElements(){
-		for (int a=0; a<_elementNum; a++){
+		while(this._elementArray.size()< this._elementNum){
 			int myGameNum = (int) (1 + (Math.random()*_setSize));
+			if(!this._elementArray.contains(myGameNum)){
 			this._elementArray.add(myGameNum);
-			
+			}
 		}
-		this._initialize();
+		//this._initialize();
 		
 	}
 	
